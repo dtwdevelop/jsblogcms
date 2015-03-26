@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{%block content %}
+<div class="col-md-5">
+	
+	{%if data %}
+	{{data}}
+	{% endif %}
+	<h3>Login</h3>
+	<form class="form" action="{% url "login" %}" method="post">
+		
+	{{form.as_p}}
+	{% csrf_token %}
+	 <input type="submit"  class="form-control btn-primary"value="Submit" />
+</form>
+<a href="{% url "register" %}" >SignUp now</a>
+</div>
+{%endblock %}

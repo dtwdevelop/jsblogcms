@@ -1,0 +1,71 @@
+.sp {
+	margin-top:50px;
+	border: 1px solid red;
+}
+
+.dropdown{
+	position: relative;
+}
+
+.cl{
+	clear: left;
+}
+
+body { padding-top: 70px; 
+      padding-bottom: 100px;
+}
+.footer{
+	color:white;
+	text-align: center;
+}
+.tagm {
+color:white;
+text-decoration: none
+margin: 5px;	
+}
+.downsp{
+	margin-bottom: 10px;
+}
+.im{
+	border: 1px solid black;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.panel-bg{
+	
+	border-bottom: #cc6600 solid 10px;
+	
+}
+.panel-down{
+	border-bottom: #cc6600 solid 5px;
+}
+.panel-bg2{
+	background: #cc6600;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:white;
+	
+}
+
+.panel-bg3{
+	padding-top:10px;
+	padding-bottom:10px;
+	color:white;
+	background: black;
+}
+.white, .white a {
+	color:white;
+}
+.panel-body{
+	background: white;
+	
+}
+.panel-title{
+	display: inline;
+	margin-top: 15px;
+	margin-left:  10px;
+	text-align: center;
+}
+.dropdown-menu a:hover{
+	background: #cc6600;
+}

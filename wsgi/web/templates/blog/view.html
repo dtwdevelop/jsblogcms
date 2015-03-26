@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{%block content %}
+<div>
+	<h4>
+		{{data.title}}
+	</h4>
+	<p>{{data.topic|safe}}</p>
+	<em class="downsp cl">{{data.pub_date|date}}</em>
+<br/>
+	<a class="btn btn-primary" href="/{{LANGUAGE_CODE}}/index">Back</a>
+	<hr/>
+	<h4>Comments ({{data.comment_set.all.count}})</h4>
+
+{% for comment in data.comment_set.all %}
+<p>{{comment.title}}</p>
+<p>{{comment.topic}}</p>
+<p>{{comment.pub_date}}</p>
+<hr />
+{% endfor%}
+</div>
+{%endblock%}

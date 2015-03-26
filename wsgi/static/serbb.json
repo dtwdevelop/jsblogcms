@@ -1,0 +1,146 @@
+{
+ "kind": "youtube#searchListResponse",
+ "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/fSuZCjDx9axCHE2wKebArJ03hpA\"",
+ "nextPageToken": "CAUQAA",
+ "pageInfo": {
+  "totalResults": 89272,
+  "resultsPerPage": 5
+ },
+ "items": [
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/U2PzQZoghFXQtJp4nvFOKcady-g\"",
+   "id": {
+    "kind": "youtube#playlist",
+    "playlistId": "PLF2E7FC0407FF3398"
+   },
+   "snippet": {
+    "publishedAt": "2011-04-29T22:19:43.000Z",
+    "channelId": "UCbr0g_ADLsdzhcoAFUZkuug",
+    "title": "Curso de PHP-MYSQL",
+    "description": "Descarga Cursos completos con códigos en http://www.videotutoriales.com Descarga videotutoriales sueltos en http://illasaron.com/html Videotutoriales del Cur.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/aUrBD6fgWKE/default.jpg"
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/aUrBD6fgWKE/mqdefault.jpg"
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/aUrBD6fgWKE/hqdefault.jpg"
+     }
+    },
+    "channelTitle": "0utKast",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/LS1e0xO9MwR6WHEOgn37MiS3PX4\"",
+   "id": {
+    "kind": "youtube#playlist",
+    "playlistId": "PLF4lVL1sPDSlQkQOz4FYO7kCSJACl5CbA"
+   },
+   "snippet": {
+    "publishedAt": "2013-09-05T11:05:10.000Z",
+    "channelId": "UCLC-vbm7OWvpbqzXaoAMGGw",
+    "title": "PHP уеб разработка",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/E9-l6Mbx-Vs/default.jpg"
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/E9-l6Mbx-Vs/mqdefault.jpg"
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/E9-l6Mbx-Vs/hqdefault.jpg"
+     }
+    },
+    "channelTitle": "TelerikAcademy",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/9O7iu3O4mpJhNFg5G9u7rss7Ilk\"",
+   "id": {
+    "kind": "youtube#playlist",
+    "playlistId": "PLEC2gTkhl5xAnwUCQK-2vQjmh9LquRQP8"
+   },
+   "snippet": {
+    "publishedAt": "2013-04-21T23:37:13.000Z",
+    "channelId": "UCyA011y4pPocHpYnPSekJGA",
+    "title": "PHP από το μηδέν",
+    "description": "Όλα τα βίντεο από την σειρά βίντεο μαθημάτων εκμάθησης της γλώσσα προγραμματισμού για το web, PHP!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/PVTj4M7Uxds/default.jpg"
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/PVTj4M7Uxds/mqdefault.jpg"
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/PVTj4M7Uxds/hqdefault.jpg"
+     }
+    },
+    "channelTitle": "petsoukos",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/j1JKRGdGwbfLqRJTQdzITXaUStA\"",
+   "id": {
+    "kind": "youtube#playlist",
+    "playlistId": "PL458DB83F8CDFA904"
+   },
+   "snippet": {
+    "publishedAt": "2011-04-26T19:10:39.000Z",
+    "channelId": "UCL1HqhxbyO5P-NFtEP0ccZQ",
+    "title": "PHP och MySQL På Svenska",
+    "description": "Den här serien lär ut webbprogrammeringsspråket PHP. Vi kommer börja från absoluta början så att ALLA kan kolla på serien även de utan programmerings ...",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/I1xJ6EJgl7I/default.jpg"
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/I1xJ6EJgl7I/mqdefault.jpg"
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/I1xJ6EJgl7I/hqdefault.jpg"
+     }
+    },
+    "channelTitle": "Mr1Buying",
+    "liveBroadcastContent": "none"
+   }
+  },
+  {
+   "kind": "youtube#searchResult",
+   "etag": "\"kjEFmP90GvrCl8BObMQtGoRfgaQ/79PSmFbpcaZu8IJoWcbKSeFkAho\"",
+   "id": {
+    "kind": "youtube#playlist",
+    "playlistId": "PLfdtiltiRHWGXVHXX09fxXDi-DqInchFD"
+   },
+   "snippet": {
+    "publishedAt": "2014-05-14T11:47:48.000Z",
+    "channelId": "UCpOIUW62tnJTtpWFABxWZ8g",
+    "title": "Build a PHP MVC Application",
+    "description": "Create your own PHP MVC application from scratch to learn about MVC in PHP and make use of this design pattern for your future projects.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/OsCTzGASImQ/default.jpg"
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/OsCTzGASImQ/mqdefault.jpg"
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/OsCTzGASImQ/hqdefault.jpg"
+     }
+    },
+    "channelTitle": "phpacademy",
+    "liveBroadcastContent": "none"
+   }
+  }
+ ]
+}

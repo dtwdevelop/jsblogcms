@@ -1,0 +1,5 @@
+msgid "site"
+msgstr "sveiki"
+
+msgid "cool"
+msgstr "sveiki Jums"

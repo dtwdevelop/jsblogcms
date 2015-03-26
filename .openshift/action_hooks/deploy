@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#echo "Executing 'python $OPENSHIFT_REPO_DIR/wsgi/web/manage.py syncdb --noinput'"
+#python "$OPENSHIFT_REPO_DIR"wsgi/web/manage.py syncdb --noinput
+#echo "Executing 'python $OPENSHIFT_REPO_DIR/wsgi/web/manage.py collectstatic --noinput'"
+#python "$OPENSHIFT_REPO_DIR"wsgi/web/manage.py collectstatic --noinput
+
+source $OPENSHIFT_HOMEDIR/python-2.7/virtenv/bin/activate
+
+#cd $OPENSHIFT_REPO_DIR/wsgi/$OPENSHIFT_APP_NAME
+#python manage.py syncdb --noinput

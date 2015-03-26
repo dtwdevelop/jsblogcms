@@ -1,0 +1,9 @@
+<div class="">
+<h4>Login</h4>
+	<form class="form" action="/{{LANGUAGE_CODE}}/blog/login" method="post">
+		
+	{{form.as_p}}
+	{% csrf_token %}
+	 <input type="submit"  class="form-control btn-primary btn-sm" value="Submit" />
+</form>
+</div>

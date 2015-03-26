@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block content %}
+<div> 
+	{% load i18n %}
+	
+
+
+<div class="row" >
+
+<div class="dropdown downsp" style="float: left">
+	<span class="filter">Sort by: </span>
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    
+    <span class="glyphicon glyphicon-collapse-down "></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="?orderby=date">Date</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="?orderby=name">Name</a></li>
+     </ul>
+</div>
+
+<div class="dropdown" style="float: left;padding-left: 10px">
+	<span class="filter">Filter: </span>
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    
+    <span class="glyphicon  glyphicon-chevron-down "></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+  	{% for filter in lists%}
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="?filter={{filter.title_category}}">{{filter.title_category}}</a></li>
+    {%endfor%}
+
+  </ul>
+</div>
+</div>
+<div>
+			<br/>
+			{% include "tabs.html" with datas=lists %}
+			<hr/>
+			
+			{%if not lists%}
+        <p>No Category </p>
+        {%endif %}
+			{% for article in lists%}
+			
+			<h3>{{article.title_category}}</h3>
+			{%for data in article.page_set.all %}
+			<h4>{{data.title}}</h4>
+			<p>{{data.topic | safe}}</p>
+			<div class="downsp">
+			<img alt="None" class="downsp" src="{{ MEDIA_URL }}/upload/name.jpg" width="150" />
+			</div>
+<a class="btn btn-sm btn-primary" href="{% url "view"   data.id %}">
+					More</a>
+			<hr>
+	
+	{%endfor %}
+	
+				<p><hr>
+					Tags: {%for tag in article.tag_set.all %}
+					
+					<span class="badge">
+<a href="/{{LANGUAGE_CODE}}/index?tag={{tag.name}}" class="tagm"> {{tag.name}} </a>
+					</span>
+					{%endfor%}
+					</p>
+				
+				
+			{%endfor%}
+		</div>
+		<br/>
+			
+		{% include  "navigation.html" with pages=lists %}
+        </div>
+        
+        
+{% endblock %}
+	

@@ -1,0 +1,5 @@
+msgid "site"
+msgstr "привет Django"
+
+msgid "cool"
+msgstr "круто"

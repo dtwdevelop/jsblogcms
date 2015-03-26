@@ -1,0 +1,3 @@
+{% for page in data|slice:":5"  %}
+<a class="clearfix" href="{% url "view"   page.id %}">{{page.title}}</a>
+{% endfor%}

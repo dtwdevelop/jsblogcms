@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{%block content %}
+<div  class="col-md-5">
+	
+	<h3>Upload File</h3>
+	<form class="form" action="/{{LANGUAGE_CODE}}/blog/list" method="post" enctype="multipart/form-data">
+		
+	{{file.as_p}}
+	{% csrf_token %}
+	 <input type="submit"  class="form-control btn-primary"value="Submit" />
+</form>
+</div>
+{%endblock %}

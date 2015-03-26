@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{%block content %}
+<div class="col-md-7">
+	<h3>Contact Just</h3>
+	
+	<form  class="form-horizontal" role="form" action="/{{LANGUAGE_CODE}}/blog/contact" method="post">
+	 <div class="form-group">	
+	{{form.as_p}}
+	{% csrf_token %}
+	 <input type="submit" class="form-control btn-primary" value="Submit" />
+	 </div>
+</form>
+</div>
+{%endblock %}

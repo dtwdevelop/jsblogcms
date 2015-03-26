@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{%block content %}
+<div class="page-header">
+  <h1>Fotos &nbsp;<small>for Fun</small></h1>
+</div>
+
+
+<div class="row">
+	<div class="col-md-6">
+	{%if fotos%}
+	
+	<ul class="media-list">
+{%for foto in fotos %}
+  <li class="media">
+    <a class="pull-left bfoto" rel="group" href="/media/{{ foto.avatar }}">
+      <img class="media-object img-rounded " src="{{ foto.avatar_thumbnail.url }}" alt="{{foto.title}}">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">{{foto.title}}</h4>
+      
+    </div>
+    <hr/>
+  </li>
+  {% endfor %}
+</ul>
+</div>
+
+</div>
+{% include  "navigation.html" with pages=fotos %}
+{%endif %}
+{%endblock %}

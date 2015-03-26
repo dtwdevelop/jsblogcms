@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="contact">
+	
+	{#{{perms.web}}#}
+	
+	{% if perms.blog.can_publish %}
+	<p>Toka для избранных</p>
+	{% else%}
+	Not valid
+	{% endif %}
+	
+</div>
+{%endblock %}

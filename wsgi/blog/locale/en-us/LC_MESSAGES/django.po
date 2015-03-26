@@ -1,0 +1,5 @@
+msgid "site"
+msgstr "En come"
+
+msgid "cool"
+msgstr "cool cool"

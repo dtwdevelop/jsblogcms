@@ -1,0 +1,69 @@
+<html lang="{{LANGUAGE_CODE}}">
+<head>
+{% load i18n %}
+{% load staticfiles %}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="{% static 'bootstrap-3.2.0/css/bootstrap.min.css' %}">
+<!-- Optional theme -->
+<link rel="stylesheet" href="{% static 'bootstrap-3.2.0/css/bootstrap-theme.min.css'%}">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'fancybox/jquery.fancybox.css' %}" type="text/css" media="screen" />
+
+<!-- Latest compiled and minified JavaScript -->
+<!--[if lt chrome] -->
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+
+<!--[endif]-->  
+<!--<script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>-->
+<!--<script type="text/javascript" src="{% static 'fancybox/jquery.fancybox.js' %}"></script>-->
+<!--<script src="{% static 'js/lib.js' %}"></script>-->
+<title>{% block titile%} {% endblock %}</title>
+</head>
+	<body>
+	
+{% verbatim %}
+<script type="text/x-handlebars"  >
+    
+
+{{content}}
+    {{outlet}}
+
+
+</script>
+ <script type="text/x-handlebars" data-template-name="index">
+
+
+ <div class="container">
+
+    <button class="btn" {{action 'sort' 'login'}}>Name</button>
+    <button class="btn" {{action 'sort' 'about'}}>About</button>
+    Filter:{{input action="in" value=filter placeholder='Login'}}
+    <hr/>
+    {{#each comment in model}}
+      <p>{{comment.title}}</p>
+<hr>
+{{#link-to 'message' class="btn btn-default btn-sm"}}Send Message{{/link-to}}
+ 
+{{/each}}
+  
+
+   </div>
+</script>
+{% endverbatim %}
+               
+	
+    <script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+	<script src="{% static 'bootstrap-3.2.0/js/bootstrap.min.js' %}"></script>
+
+     <script src="{% static 'app/libs/handlebars-v2.0.0.js' %}"></script>
+     <script src="{% static 'app/libs/ember-1.9.1.js' %}"></script>
+     <script src="{% static 'app/libs/ember-data.min2.js' %}"></script>
+     <script src="{% static 'app/libs/ember-data-django-rest-adapter.min.js' %}"></script>
+
+     <script src="{% static 'app/app.js' %}"></script>
+    <script src="{% static 'app/model.js' %}"></script>
+	</body>
+</html>

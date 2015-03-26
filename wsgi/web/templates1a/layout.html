@@ -1,0 +1,57 @@
+<html lang="{{LANGUAGE_CODE}}">
+<head>
+{% load i18n %}
+{% load staticfiles %}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">		
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="{% static 'bootstrap-3.2.0/css/bootstrap.min.css' %}">
+<!-- Optional theme -->
+<link rel="stylesheet" href="{% static 'bootstrap-3.2.0/css/bootstrap-theme.min.css'%}">
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'fancybox/jquery.fancybox.css' %}" type="text/css" media="screen" />
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="{% static 'js/jquery-1.11.0.min.js' %}"></script>
+<!--[if lt chrome] -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<!--[endif]-->  
+<script src="{% static 'bootstrap-3.2.0/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'ckeditor/ckeditor.js' %}"></script>
+<script type="text/javascript" src="{% static 'ckeditor/adapters/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'fancybox/jquery.fancybox.js' %}"></script>
+<script src="{% static 'js/lib.js' %}"></script>
+<title>{% block titile%} {% endblock %}</title>
+</head>
+	<body>
+	
+{% include "menu.html" %}
+
+
+
+{% if messages %}
+<ul class="messages ">
+    {% for message in messages %}
+    <li><div {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div></li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+  <div class="container-fluid">
+  	<div class="row">
+  		<div class="col-md-2 ">
+  		{% include 'lang.html' with lan=My_Lang %}
+  		{#{% include "profile.html" %}#}
+  		</div>
+		
+			<div class="col-md-6">{% block content %}
+			{% endblock %}
+			
+			</div>
+		
+		<div class="col-md-3">{% include "block.html" %}</div>
+		</div>
+	</div>
+		{% include "footer.html" %}
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+	
+  <li class="active"><a href="#home" role="tab" data-toggle="tab">Web scripting</a></li>
+  <li><a href="#game" role="tab" data-toggle="tab">Games</a></li>
+  <li><a href="#web" role="tab" data-toggle="tab">Web design</a></li>
+  
+</ul>
+{% for data in datas %}
+   
+
+{% for page in data.page_set.all %}
+
+<div class="tab-content">
+	{% if data.count == 1  %}
+  <div class="tab-pane active" id="{{data.title_category}}">{{page.topic | safe}}</div>
+  {% else %}
+  <div class="tab-pane" id="{{data.title_category}}">{{data.topic|safe}}</div>
+  {%endif%}
+  
+ 
+</div>
+
+{% endfor %}
+
+{% endfor %}

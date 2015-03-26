@@ -1,0 +1,33 @@
+<div class="panel panel-default  ">
+<div class=" panel-bg2 "><h3 class="panel-title"> <span class="glyphicon glyphicon-globe "></span>&nbsp;Language</h3> </div>
+<div class="panel-body">
+{% load i18n %}
+<form action="{% url 'set_language' %}" method="post">
+{% csrf_token %}
+<input name="next" type="hidden" value="/{{ redirect_to }}" />
+<select name="language" onchange="this.form.submit()">
+{% get_language_info_list for lan as languages %}
+{% for language in languages %}
+
+<option  value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+    {{ language.name_local }} ({{ language.code }})
+</option>
+{% endfor %}
+
+</select>
+
+</form>
+</div>
+</div>
+<div class="panel panel-default  ">
+<div class=" panel-bg3 ">
+<h3 class="panel-title"> 
+<span class="glyphicon glyphicon glyphicon-th "></span>&nbsp;Last news</h3> </div>
+<div class="panel-body">
+{% load block_news %}
+{% show_news info="Ready" %}
+</div>
+</div>
+
+
+

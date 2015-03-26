@@ -1,0 +1,11 @@
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
+
+class MyView(...):
+    renderer_classes = [renderers.JSONRenderer]
+
+
+Ember DjangoRESTAdapter

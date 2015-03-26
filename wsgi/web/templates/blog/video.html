@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{%block content %}
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/vtKNY35oUg4" frameborder="0" allowfullscreen></iframe>
+<hr>
+<form class="form" action="/{{LANGUAGE_CODE}}/blog/video" method="post">
+	<input type="text"  placeholder="Video search" name="seach" class="s"/>
+	{% csrf_token %}
+	<input type="submit"  value="search"/>
+</form>
+{%endblock %}
